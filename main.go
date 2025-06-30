@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 )
 
@@ -22,7 +23,9 @@ func main() {
 		log.Fatal(err)
 	}
 
-	err = InsertCategories(ctx, tx)
+	// err = InsertCategories(ctx, tx)
+	err = InsertTags(ctx, tx)
+	fmt.Println(err)
 
 	if err == nil {
 		err = tx.Commit(ctx)
