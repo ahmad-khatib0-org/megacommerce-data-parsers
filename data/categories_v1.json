@@ -1,0 +1,1072 @@
+[
+  {
+    "id": "electronics",
+    "name": "Electronics",
+    "subcategories": [
+      {
+        "id": "smartphones",
+        "name": "Smartphones",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "select",
+            "data": ["Apple", "Samsung", "Google", "OnePlus", "Huawei"]
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "os": {
+            "required": true,
+            "type": "select",
+            "data": ["iOS", "Android", "Other"]
+          },
+          "battery_capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "screen_size": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "ram": {
+            "required": true,
+            "type": "select",
+            "data": ["2GB", "4GB", "6GB", "8GB", "12GB", "16GB"]
+          },
+          "storage": {
+            "required": true,
+            "type": "select",
+            "data": ["32GB", "64GB", "128GB", "256GB", "512GB"]
+          },
+          "camera_megapixels": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Black", "White", "Blue", "Red", "Green"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "laptops",
+        "name": "Laptops",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "select",
+            "data": ["Dell", "HP", "Apple", "Lenovo", "Asus"]
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "os": {
+            "required": true,
+            "type": "select",
+            "data": ["Windows", "macOS", "Linux", "Chrome OS"]
+          },
+          "cpu": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "ram": {
+            "required": true,
+            "type": "select",
+            "data": ["4GB", "8GB", "16GB", "32GB"]
+          },
+          "storage_type": {
+            "required": true,
+            "type": "select",
+            "data": ["HDD", "SSD", "Hybrid"]
+          },
+          "storage_capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "screen_size": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "battery_life": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "headphones",
+        "name": "Headphones",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "select",
+            "data": ["Sony", "Bose", "Sennheiser", "Apple", "Beats"]
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Over-ear", "In-ear", "On-ear", "Wireless", "Wired"]
+          },
+          "wireless": {
+            "required": true,
+            "type": "boolean",
+            "data": null
+          },
+          "battery_life": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "noise_cancellation": {
+            "required": true,
+            "type": "boolean",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Black", "White", "Gray", "Red", "Blue"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "televisions",
+        "name": "Televisions",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "select",
+            "data": ["Samsung", "LG", "Sony", "Panasonic", "TCL"]
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "screen_size": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "resolution": {
+            "required": true,
+            "type": "select",
+            "data": ["HD", "Full HD", "4K", "8K"]
+          },
+          "smart_tv": {
+            "required": true,
+            "type": "boolean",
+            "data": null
+          },
+          "hdmi_ports": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "usb_ports": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "cameras",
+        "name": "Cameras",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "select",
+            "data": ["Canon", "Nikon", "Sony", "Fujifilm", "GoPro"]
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "camera_type": {
+            "required": true,
+            "type": "select",
+            "data": ["DSLR", "Mirrorless", "Point & Shoot", "Action"]
+          },
+          "megapixels": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "optical_zoom": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "digital_zoom": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "battery_life": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "agricultural_goods",
+    "name": "Agricultural Goods",
+    "subcategories": [
+      {
+        "id": "fertilizers",
+        "name": "Fertilizers",
+        "attributes": {
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": [
+              "Organic",
+              "Inorganic",
+              "Nitrogen-based",
+              "Phosphorus-based",
+              "Potassium-based"
+            ]
+          },
+          "composition": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "form": {
+            "required": true,
+            "type": "select",
+            "data": ["Powder", "Granular", "Liquid"]
+          },
+          "application_method": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "packaging": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "seeds",
+        "name": "Seeds",
+        "attributes": {
+          "crop_type": {
+            "required": true,
+            "type": "select",
+            "data": ["Vegetable", "Fruit", "Cereal", "Flower"]
+          },
+          "variety": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "germination_rate": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight_per_pack": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "packaging": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "organic_certified": {
+            "type": "boolean",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "agri_machinery",
+        "name": "Agricultural Machinery",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "power_source": {
+            "required": true,
+            "type": "select",
+            "data": ["Diesel", "Electric", "Gasoline"]
+          },
+          "engine_power": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "dimensions": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "fuel_capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "pesticides",
+        "name": "Pesticides",
+        "attributes": {
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Insecticide", "Herbicide", "Fungicide"]
+          },
+          "active_ingredients": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "form": {
+            "required": true,
+            "type": "select",
+            "data": ["Liquid", "Granular", "Powder"]
+          },
+          "application_method": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "toxicity_level": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "animal_feed",
+        "name": "Animal Feed",
+        "attributes": {
+          "animal_type": {
+            "required": true,
+            "type": "select",
+            "data": ["Cattle", "Poultry", "Sheep", "Fish", "Pets"]
+          },
+          "ingredients": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "form": {
+            "required": true,
+            "type": "select",
+            "data": ["Pellets", "Mash", "Powder"]
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "packaging": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "fashion",
+    "name": "Fashion",
+    "subcategories": [
+      {
+        "id": "mens_clothing",
+        "name": "Men's Clothing",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "material": {
+            "required": true,
+            "type": "select",
+            "data": ["Cotton", "Polyester", "Leather", "Wool"]
+          },
+          "size": {
+            "required": true,
+            "type": "select",
+            "data": ["XS", "S", "M", "L", "XL", "XXL"]
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Black", "White", "Blue", "Red", "Green"]
+          },
+          "fit": {
+            "required": true,
+            "type": "select",
+            "data": ["Slim", "Regular", "Loose"]
+          },
+          "pattern": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "womens_clothing",
+        "name": "Women's Clothing",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "material": {
+            "required": true,
+            "type": "select",
+            "data": ["Cotton", "Silk", "Polyester", "Linen"]
+          },
+          "size": {
+            "required": true,
+            "type": "select",
+            "data": ["XS", "S", "M", "L", "XL"]
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Black", "White", "Pink", "Red", "Yellow"]
+          },
+          "style": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "pattern": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "footwear",
+        "name": "Footwear",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "size": {
+            "required": true,
+            "type": "select",
+            "data": ["6", "7", "8", "9", "10", "11", "12"]
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Black", "White", "Brown", "Blue", "Red"]
+          },
+          "material": {
+            "required": true,
+            "type": "select",
+            "data": ["Leather", "Synthetic", "Canvas"]
+          },
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Sneakers", "Boots", "Sandals", "Formal"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "accessories",
+        "name": "Accessories",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Watch", "Belt", "Hat", "Sunglasses"]
+          },
+          "material": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Black", "Brown", "Gold", "Silver"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "jewelry",
+        "name": "Jewelry",
+        "attributes": {
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Ring", "Necklace", "Bracelet", "Earrings"]
+          },
+          "material": {
+            "required": true,
+            "type": "select",
+            "data": ["Gold", "Silver", "Platinum", "Diamond"]
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "gemstone": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "home_appliances",
+    "name": "Home Appliances",
+    "subcategories": [
+      {
+        "id": "refrigerators",
+        "name": "Refrigerators",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "energy_rating": {
+            "required": true,
+            "type": "select",
+            "data": ["A++", "A+", "A", "B", "C"]
+          },
+          "dimensions": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["White", "Silver", "Black", "Red"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "washing_machines",
+        "name": "Washing Machines",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "load_type": {
+            "required": true,
+            "type": "select",
+            "data": ["Front Load", "Top Load"]
+          },
+          "capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "spin_speed": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "energy_rating": {
+            "required": true,
+            "type": "select",
+            "data": ["A++", "A+", "A", "B", "C"]
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["White", "Silver", "Black"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "microwaves",
+        "name": "Microwaves",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "power": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["White", "Black", "Silver"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "air_conditioners",
+        "name": "Air Conditioners",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Window", "Split", "Portable"]
+          },
+          "cooling_capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "energy_rating": {
+            "required": true,
+            "type": "select",
+            "data": ["A++", "A+", "A", "B"]
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["White", "Silver", "Beige"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "vacuum_cleaners",
+        "name": "Vacuum Cleaners",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Handheld", "Upright", "Robot"]
+          },
+          "power": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "select",
+            "data": ["Red", "Black", "Blue", "Silver"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sports_equipment",
+    "name": "Sports Equipment",
+    "subcategories": [
+      {
+        "id": "fitness_machines",
+        "name": "Fitness Machines",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "model": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Treadmill", "Exercise Bike", "Elliptical"]
+          },
+          "weight_capacity": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "dimensions": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "power_source": {
+            "required": true,
+            "type": "select",
+            "data": ["Electric", "Manual"]
+          },
+          "warranty_period": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "balls",
+        "name": "Balls",
+        "attributes": {
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Football", "Basketball", "Tennis Ball", "Golf Ball"]
+          },
+          "material": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "size": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "protective_gear",
+        "name": "Protective Gear",
+        "attributes": {
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Helmet", "Pads", "Gloves"]
+          },
+          "material": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "size": {
+            "required": true,
+            "type": "select",
+            "data": ["S", "M", "L", "XL"]
+          },
+          "color": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "outdoor_gear",
+        "name": "Outdoor Gear",
+        "attributes": {
+          "type": {
+            "required": true,
+            "type": "select",
+            "data": ["Tent", "Backpack", "Sleeping Bag"]
+          },
+          "material": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "weight": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "dimensions": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "color": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      },
+      {
+        "id": "apparel",
+        "name": "Sports Apparel",
+        "attributes": {
+          "brand": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "material": {
+            "required": true,
+            "type": "select",
+            "data": ["Polyester", "Cotton", "Nylon"]
+          },
+          "size": {
+            "required": true,
+            "type": "select",
+            "data": ["XS", "S", "M", "L", "XL"]
+          },
+          "color": {
+            "required": true,
+            "type": "string",
+            "data": null
+          },
+          "pattern": {
+            "required": true,
+            "type": "string",
+            "data": null
+          }
+        }
+      }
+    ]
+  }
+]
