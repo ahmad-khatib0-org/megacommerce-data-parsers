@@ -1,0 +1,3 @@
+---
+db:
+  dsn: postgres://megacommerce:megacommerce@127.0.0.1:5432/megacommerce?sslmode=disable
