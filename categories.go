@@ -25,15 +25,15 @@ type CategoryEdit struct {
 }
 
 type Subcategory struct {
-	Id         string                    `json:"id"`
-	Name       string                    `json:"name"`
-	Attributes map[string]*MegaAttribute `json:"attributes"`
+	Id         string                           `json:"id"`
+	Name       string                           `json:"name"`
+	Attributes map[string]*SubcategoryAttribute `json:"attributes"`
 }
 
-type MegaAttribute struct {
-	Required bool   `json:"required"`
-	Type     string `json:"type"`
-	Data     any    `json:"data"`
+type SubcategoryAttribute struct {
+	Required    bool     `json:"required"`
+	Type        string   `json:"type"`
+	StringArray []string `json:"string_array,omitempty"`
 }
 
 func InsertCategories(ctx context.Context, tx pgx.Tx) error {

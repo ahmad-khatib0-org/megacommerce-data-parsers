@@ -10,57 +10,80 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": ["Apple", "Samsung", "Google", "OnePlus", "Huawei"]
+            "string_array": [
+              "Apple",
+              "Samsung",
+              "Google",
+              "OnePlus",
+              "Huawei"
+            ]
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "os": {
             "required": true,
             "type": "select",
-            "data": ["iOS", "Android", "Other"]
+            "string_array": [
+              "iOS",
+              "Android",
+              "Other"
+            ]
           },
           "battery_capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "screen_size": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "ram": {
             "required": true,
             "type": "select",
-            "data": ["2GB", "4GB", "6GB", "8GB", "12GB", "16GB"]
+            "string_array": [
+              "2GB",
+              "4GB",
+              "6GB",
+              "8GB",
+              "12GB",
+              "16GB"
+            ]
           },
           "storage": {
             "required": true,
             "type": "select",
-            "data": ["32GB", "64GB", "128GB", "256GB", "512GB"]
+            "string_array": [
+              "32GB",
+              "64GB",
+              "128GB",
+              "256GB",
+              "512GB"
+            ]
           },
           "camera_megapixels": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Black", "White", "Blue", "Red", "Green"]
+            "string_array": [
+              "Black",
+              "White",
+              "Blue",
+              "Red",
+              "Green"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -71,57 +94,70 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": ["Dell", "HP", "Apple", "Lenovo", "Asus"]
+            "string_array": [
+              "Dell",
+              "HP",
+              "Apple",
+              "Lenovo",
+              "Asus"
+            ]
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "os": {
             "required": true,
             "type": "select",
-            "data": ["Windows", "macOS", "Linux", "Chrome OS"]
+            "string_array": [
+              "Windows",
+              "macOS",
+              "Linux",
+              "Chrome OS"
+            ]
           },
           "cpu": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "ram": {
             "required": true,
             "type": "select",
-            "data": ["4GB", "8GB", "16GB", "32GB"]
+            "string_array": [
+              "4GB",
+              "8GB",
+              "16GB",
+              "32GB"
+            ]
           },
           "storage_type": {
             "required": true,
             "type": "select",
-            "data": ["HDD", "SSD", "Hybrid"]
+            "string_array": [
+              "HDD",
+              "SSD",
+              "Hybrid"
+            ]
           },
           "storage_capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "screen_size": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "battery_life": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -132,47 +168,59 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": ["Sony", "Bose", "Sennheiser", "Apple", "Beats"]
+            "string_array": [
+              "Sony",
+              "Bose",
+              "Sennheiser",
+              "Apple",
+              "Beats"
+            ]
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Over-ear", "In-ear", "On-ear", "Wireless", "Wired"]
+            "string_array": [
+              "Over-ear",
+              "In-ear",
+              "On-ear",
+              "Wireless",
+              "Wired"
+            ]
           },
           "wireless": {
             "required": true,
-            "type": "boolean",
-            "data": null
+            "type": "boolean"
           },
           "battery_life": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "noise_cancellation": {
             "required": true,
-            "type": "boolean",
-            "data": null
+            "type": "boolean"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Black", "White", "Gray", "Red", "Blue"]
+            "string_array": [
+              "Black",
+              "White",
+              "Gray",
+              "Red",
+              "Blue"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -183,47 +231,51 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": ["Samsung", "LG", "Sony", "Panasonic", "TCL"]
+            "string_array": [
+              "Samsung",
+              "LG",
+              "Sony",
+              "Panasonic",
+              "TCL"
+            ]
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "screen_size": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "resolution": {
             "required": true,
             "type": "select",
-            "data": ["HD", "Full HD", "4K", "8K"]
+            "string_array": [
+              "HD",
+              "Full HD",
+              "4K",
+              "8K"
+            ]
           },
           "smart_tv": {
             "required": true,
-            "type": "boolean",
-            "data": null
+            "type": "boolean"
           },
           "hdmi_ports": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "usb_ports": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -234,47 +286,51 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": ["Canon", "Nikon", "Sony", "Fujifilm", "GoPro"]
+            "string_array": [
+              "Canon",
+              "Nikon",
+              "Sony",
+              "Fujifilm",
+              "GoPro"
+            ]
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "camera_type": {
             "required": true,
             "type": "select",
-            "data": ["DSLR", "Mirrorless", "Point & Shoot", "Action"]
+            "string_array": [
+              "DSLR",
+              "Mirrorless",
+              "Point & Shoot",
+              "Action"
+            ]
           },
           "megapixels": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "optical_zoom": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "digital_zoom": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "battery_life": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       }
@@ -291,7 +347,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
+            "string_array": [
               "Organic",
               "Inorganic",
               "Nitrogen-based",
@@ -301,28 +357,28 @@
           },
           "composition": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "form": {
             "required": true,
             "type": "select",
-            "data": ["Powder", "Granular", "Liquid"]
+            "string_array": [
+              "Powder",
+              "Granular",
+              "Liquid"
+            ]
           },
           "application_method": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "packaging": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -333,31 +389,31 @@
           "crop_type": {
             "required": true,
             "type": "select",
-            "data": ["Vegetable", "Fruit", "Cereal", "Flower"]
+            "string_array": [
+              "Vegetable",
+              "Fruit",
+              "Cereal",
+              "Flower"
+            ]
           },
           "variety": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "germination_rate": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight_per_pack": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "packaging": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "organic_certified": {
-            "type": "boolean",
-            "data": null
+            "type": "boolean"
           }
         }
       },
@@ -367,43 +423,40 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "power_source": {
             "required": true,
             "type": "select",
-            "data": ["Diesel", "Electric", "Gasoline"]
+            "string_array": [
+              "Diesel",
+              "Electric",
+              "Gasoline"
+            ]
           },
           "engine_power": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "dimensions": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "fuel_capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -414,32 +467,36 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Insecticide", "Herbicide", "Fungicide"]
+            "string_array": [
+              "Insecticide",
+              "Herbicide",
+              "Fungicide"
+            ]
           },
           "active_ingredients": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "form": {
             "required": true,
             "type": "select",
-            "data": ["Liquid", "Granular", "Powder"]
+            "string_array": [
+              "Liquid",
+              "Granular",
+              "Powder"
+            ]
           },
           "application_method": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "toxicity_level": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -450,27 +507,34 @@
           "animal_type": {
             "required": true,
             "type": "select",
-            "data": ["Cattle", "Poultry", "Sheep", "Fish", "Pets"]
+            "string_array": [
+              "Cattle",
+              "Poultry",
+              "Sheep",
+              "Fish",
+              "Pets"
+            ]
           },
           "ingredients": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "form": {
             "required": true,
             "type": "select",
-            "data": ["Pellets", "Mash", "Powder"]
+            "string_array": [
+              "Pellets",
+              "Mash",
+              "Powder"
+            ]
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "packaging": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       }
@@ -486,38 +550,57 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": ["Cotton", "Polyester", "Leather", "Wool"]
+            "string_array": [
+              "Cotton",
+              "Polyester",
+              "Leather",
+              "Wool"
+            ]
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": ["XS", "S", "M", "L", "XL", "XXL"]
+            "string_array": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "XXL"
+            ]
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Black", "White", "Blue", "Red", "Green"]
+            "string_array": [
+              "Black",
+              "White",
+              "Blue",
+              "Red",
+              "Green"
+            ]
           },
           "fit": {
             "required": true,
             "type": "select",
-            "data": ["Slim", "Regular", "Loose"]
+            "string_array": [
+              "Slim",
+              "Regular",
+              "Loose"
+            ]
           },
           "pattern": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -527,38 +610,51 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": ["Cotton", "Silk", "Polyester", "Linen"]
+            "string_array": [
+              "Cotton",
+              "Silk",
+              "Polyester",
+              "Linen"
+            ]
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": ["XS", "S", "M", "L", "XL"]
+            "string_array": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Black", "White", "Pink", "Red", "Yellow"]
+            "string_array": [
+              "Black",
+              "White",
+              "Pink",
+              "Red",
+              "Yellow"
+            ]
           },
           "style": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "pattern": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -568,33 +664,54 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": ["6", "7", "8", "9", "10", "11", "12"]
+            "string_array": [
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ]
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Black", "White", "Brown", "Blue", "Red"]
+            "string_array": [
+              "Black",
+              "White",
+              "Brown",
+              "Blue",
+              "Red"
+            ]
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": ["Leather", "Synthetic", "Canvas"]
+            "string_array": [
+              "Leather",
+              "Synthetic",
+              "Canvas"
+            ]
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Sneakers", "Boots", "Sandals", "Formal"]
+            "string_array": [
+              "Sneakers",
+              "Boots",
+              "Sandals",
+              "Formal"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -604,28 +721,35 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Watch", "Belt", "Hat", "Sunglasses"]
+            "string_array": [
+              "Watch",
+              "Belt",
+              "Hat",
+              "Sunglasses"
+            ]
           },
           "material": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Black", "Brown", "Gold", "Silver"]
+            "string_array": [
+              "Black",
+              "Brown",
+              "Gold",
+              "Silver"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -636,32 +760,38 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Ring", "Necklace", "Bracelet", "Earrings"]
+            "string_array": [
+              "Ring",
+              "Necklace",
+              "Bracelet",
+              "Earrings"
+            ]
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": ["Gold", "Silver", "Platinum", "Diamond"]
+            "string_array": [
+              "Gold",
+              "Silver",
+              "Platinum",
+              "Diamond"
+            ]
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "gemstone": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       }
@@ -677,43 +807,48 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "energy_rating": {
             "required": true,
             "type": "select",
-            "data": ["A++", "A+", "A", "B", "C"]
+            "string_array": [
+              "A++",
+              "A+",
+              "A",
+              "B",
+              "C"
+            ]
           },
           "dimensions": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["White", "Silver", "Black", "Red"]
+            "string_array": [
+              "White",
+              "Silver",
+              "Black",
+              "Red"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -723,48 +858,55 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "load_type": {
             "required": true,
             "type": "select",
-            "data": ["Front Load", "Top Load"]
+            "string_array": [
+              "Front Load",
+              "Top Load"
+            ]
           },
           "capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "spin_speed": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "energy_rating": {
             "required": true,
             "type": "select",
-            "data": ["A++", "A+", "A", "B", "C"]
+            "string_array": [
+              "A++",
+              "A+",
+              "A",
+              "B",
+              "C"
+            ]
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["White", "Silver", "Black"]
+            "string_array": [
+              "White",
+              "Silver",
+              "Black"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -774,38 +916,36 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "power": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["White", "Black", "Silver"]
+            "string_array": [
+              "White",
+              "Black",
+              "Silver"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -815,43 +955,51 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Window", "Split", "Portable"]
+            "string_array": [
+              "Window",
+              "Split",
+              "Portable"
+            ]
           },
           "cooling_capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "energy_rating": {
             "required": true,
             "type": "select",
-            "data": ["A++", "A+", "A", "B"]
+            "string_array": [
+              "A++",
+              "A+",
+              "A",
+              "B"
+            ]
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["White", "Silver", "Beige"]
+            "string_array": [
+              "White",
+              "Silver",
+              "Beige"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -861,38 +1009,42 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Handheld", "Upright", "Robot"]
+            "string_array": [
+              "Handheld",
+              "Upright",
+              "Robot"
+            ]
           },
           "power": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": ["Red", "Black", "Blue", "Silver"]
+            "string_array": [
+              "Red",
+              "Black",
+              "Blue",
+              "Silver"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       }
@@ -908,38 +1060,40 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "model": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Treadmill", "Exercise Bike", "Elliptical"]
+            "string_array": [
+              "Treadmill",
+              "Exercise Bike",
+              "Elliptical"
+            ]
           },
           "weight_capacity": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "dimensions": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "power_source": {
             "required": true,
             "type": "select",
-            "data": ["Electric", "Manual"]
+            "string_array": [
+              "Electric",
+              "Manual"
+            ]
           },
           "warranty_period": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -950,27 +1104,28 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Football", "Basketball", "Tennis Ball", "Golf Ball"]
+            "string_array": [
+              "Football",
+              "Basketball",
+              "Tennis Ball",
+              "Golf Ball"
+            ]
           },
           "material": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "size": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -981,27 +1136,33 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Helmet", "Pads", "Gloves"]
+            "string_array": [
+              "Helmet",
+              "Pads",
+              "Gloves"
+            ]
           },
           "material": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": ["S", "M", "L", "XL"]
+            "string_array": [
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
           },
           "color": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -1012,27 +1173,27 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": ["Tent", "Backpack", "Sleeping Bag"]
+            "string_array": [
+              "Tent",
+              "Backpack",
+              "Sleeping Bag"
+            ]
           },
           "material": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "weight": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "dimensions": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "color": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       },
@@ -1042,28 +1203,35 @@
         "attributes": {
           "brand": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": ["Polyester", "Cotton", "Nylon"]
+            "string_array": [
+              "Polyester",
+              "Cotton",
+              "Nylon"
+            ]
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": ["XS", "S", "M", "L", "XL"]
+            "string_array": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
           },
           "color": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           },
           "pattern": {
             "required": true,
-            "type": "string",
-            "data": null
+            "type": "string"
           }
         }
       }
