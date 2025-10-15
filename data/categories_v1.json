@@ -2,25 +2,33 @@
   {
     "id": "electronics",
     "name": "Electronics",
+    "image": "/images/categories/electronics.png",
+    "version": 1,
+    "created_at": "2025-07-17 21:03:00.051",
     "subcategories": [
       {
         "id": "smartphones",
         "name": "Smartphones",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "select",
-            "string_array": [
-              "Apple",
-              "Samsung",
-              "Google",
-              "OnePlus",
-              "Huawei"
-            ]
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "os": {
             "required": true,
@@ -33,11 +41,41 @@
           },
           "battery_capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "screen_size": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "ram": {
             "required": true,
@@ -64,11 +102,41 @@
           },
           "camera_megapixels": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -83,28 +151,48 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "laptops",
         "name": "Laptops",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "select",
-            "string_array": [
-              "Dell",
-              "HP",
-              "Apple",
-              "Lenovo",
-              "Asus"
-            ]
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "os": {
             "required": true,
@@ -118,7 +206,22 @@
           },
           "cpu": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "ram": {
             "required": true,
@@ -141,44 +244,124 @@
           },
           "storage_capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "screen_size": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "battery_life": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "headphones",
         "name": "Headphones",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "select",
-            "string_array": [
-              "Sony",
-              "Bose",
-              "Sennheiser",
-              "Apple",
-              "Beats"
-            ]
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "type": {
             "required": true,
@@ -197,7 +380,22 @@
           },
           "battery_life": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "noise_cancellation": {
             "required": true,
@@ -205,7 +403,22 @@
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -220,32 +433,67 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "televisions",
         "name": "Televisions",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "select",
-            "string_array": [
-              "Samsung",
-              "LG",
-              "Sony",
-              "Panasonic",
-              "TCL"
-            ]
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "screen_size": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "resolution": {
             "required": true,
@@ -263,40 +511,105 @@
           },
           "hdmi_ports": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "usb_ports": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "cameras",
         "name": "Cameras",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "select",
-            "string_array": [
-              "Canon",
-              "Nikon",
-              "Sony",
-              "Fujifilm",
-              "GoPro"
-            ]
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "camera_type": {
             "required": true,
@@ -310,27 +623,117 @@
           },
           "megapixels": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "optical_zoom": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "digital_zoom": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "battery_life": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       }
@@ -339,10 +742,14 @@
   {
     "id": "agricultural_goods",
     "name": "Agricultural Goods",
+    "image": "/images/categories/agricultural-goods.png",
+    "version": 1,
+    "created_at": "2025-07-17 21:03:00.051",
     "subcategories": [
       {
         "id": "fertilizers",
         "name": "Fertilizers",
+        "version": 1,
         "attributes": {
           "type": {
             "required": true,
@@ -357,7 +764,22 @@
           },
           "composition": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "form": {
             "required": true,
@@ -370,21 +792,67 @@
           },
           "application_method": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "packaging": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "seeds",
         "name": "Seeds",
+        "version": 1,
         "attributes": {
           "crop_type": {
             "required": true,
@@ -398,19 +866,79 @@
           },
           "variety": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "germination_rate": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight_per_pack": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "packaging": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "organic_certified": {
             "type": "boolean"
@@ -420,14 +948,26 @@
       {
         "id": "agri_machinery",
         "name": "Agricultural Machinery",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "power_source": {
             "required": true,
@@ -440,29 +980,105 @@
           },
           "engine_power": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "dimensions": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "fuel_capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "pesticides",
         "name": "Pesticides",
+        "version": 1,
         "attributes": {
           "type": {
             "required": true,
@@ -475,7 +1091,22 @@
           },
           "active_ingredients": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "form": {
             "required": true,
@@ -488,21 +1119,67 @@
           },
           "application_method": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "toxicity_level": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "animal_feed",
         "name": "Animal Feed",
+        "version": 1,
         "attributes": {
           "animal_type": {
             "required": true,
@@ -517,7 +1194,22 @@
           },
           "ingredients": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "form": {
             "required": true,
@@ -530,11 +1222,41 @@
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "packaging": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       }
@@ -543,15 +1265,15 @@
   {
     "id": "fashion",
     "name": "Fashion",
+    "image": "/images/categories/fashion.png",
+    "version": 1,
+    "created_at": "2025-07-17 21:03:00.051",
     "subcategories": [
       {
         "id": "mens_clothing",
         "name": "Men's Clothing",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "material": {
             "required": true,
             "type": "select",
@@ -596,22 +1318,49 @@
           },
           "pattern": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "womens_clothing",
         "name": "Women's Clothing",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "material": {
             "required": true,
             "type": "select",
@@ -646,26 +1395,68 @@
           },
           "style": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "pattern": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "footwear",
         "name": "Footwear",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "size": {
             "required": true,
             "type": "select",
@@ -711,18 +1502,30 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "accessories",
         "name": "Accessories",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "type": {
             "required": true,
             "type": "select",
@@ -735,7 +1538,22 @@
           },
           "material": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -749,13 +1567,29 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "jewelry",
         "name": "Jewelry",
+        "version": 1,
         "attributes": {
           "type": {
             "required": true,
@@ -779,19 +1613,79 @@
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "gemstone": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       }
@@ -800,22 +1694,52 @@
   {
     "id": "home_appliances",
     "name": "Home Appliances",
+    "image": "/images/categories/home-appliances.png",
+    "version": 1,
+    "created_at": "2025-07-17 21:03:00.051",
     "subcategories": [
       {
         "id": "refrigerators",
         "name": "Refrigerators",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "energy_rating": {
             "required": true,
@@ -830,11 +1754,41 @@
           },
           "dimensions": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -848,21 +1802,48 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "washing_machines",
         "name": "Washing Machines",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "load_type": {
             "required": true,
@@ -874,11 +1855,41 @@
           },
           "capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "spin_speed": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "energy_rating": {
             "required": true,
@@ -893,7 +1904,22 @@
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -906,33 +1932,105 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "microwaves",
         "name": "Microwaves",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "power": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -945,21 +2043,48 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "air_conditioners",
         "name": "Air Conditioners",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "type": {
             "required": true,
@@ -972,7 +2097,22 @@
           },
           "cooling_capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "energy_rating": {
             "required": true,
@@ -986,7 +2126,22 @@
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -999,21 +2154,48 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "vacuum_cleaners",
         "name": "Vacuum Cleaners",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "type": {
             "required": true,
@@ -1026,11 +2208,41 @@
           },
           "power": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
@@ -1044,7 +2256,22 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       }
@@ -1053,18 +2280,33 @@
   {
     "id": "sports_equipment",
     "name": "Sports Equipment",
+    "image": "/images/categories/sports-equipment.png",
+    "version": 1,
+    "created_at": "2025-07-17 21:03:00.051",
     "subcategories": [
       {
         "id": "fitness_machines",
         "name": "Fitness Machines",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "model": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "type": {
             "required": true,
@@ -1077,11 +2319,41 @@
           },
           "weight_capacity": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "dimensions": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "power_source": {
             "required": true,
@@ -1093,13 +2365,29 @@
           },
           "warranty_period": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "balls",
         "name": "Balls",
+        "version": 1,
         "attributes": {
           "type": {
             "required": true,
@@ -1113,25 +2401,86 @@
           },
           "material": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "size": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "protective_gear",
         "name": "Protective Gear",
+        "version": 1,
         "attributes": {
           "type": {
             "required": true,
@@ -1144,7 +2493,22 @@
           },
           "material": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "size": {
             "required": true,
@@ -1158,17 +2522,48 @@
           },
           "color": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "outdoor_gear",
         "name": "Outdoor Gear",
+        "version": 1,
         "attributes": {
           "type": {
             "required": true,
@@ -1181,30 +2576,87 @@
           },
           "material": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "weight": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "dimensions": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "color": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       },
       {
         "id": "apparel",
         "name": "Sports Apparel",
+        "version": 1,
         "attributes": {
-          "brand": {
-            "required": true,
-            "type": "string"
-          },
           "material": {
             "required": true,
             "type": "select",
@@ -1227,11 +2679,41 @@
           },
           "color": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           },
           "pattern": {
             "required": true,
-            "type": "string"
+            "type": "input",
+            "string_array": [],
+            "validation": {
+              "str": {
+                "rules": [
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MIN",
+                    "value": 3
+                  },
+                  {
+                    "type": "NUMERIC_RULE_TYPE_MAX",
+                    "value": 256
+                  }
+                ]
+              }
+            }
           }
         }
       }

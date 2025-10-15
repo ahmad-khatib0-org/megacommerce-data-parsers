@@ -11,29 +11,51 @@ import (
 )
 
 type Category struct {
-	Id            string         `json:"id"`
+	ID            string         `json:"id"`
 	Name          string         `json:"name"`
+	Image         string         `json:"image"`
 	Subcategories []*Subcategory `json:"subcategories"`
-}
-
-type CategoryEdit struct {
-	Id            string         `json:"id"`
-	Name          string         `json:"name"`
-	Subcategories []*Subcategory `json:"subcategories"`
-	Version       int            `json:"version"`
-	CreatedAt     time.Time      `json:"created_at"`
 }
 
 type Subcategory struct {
-	Id         string                           `json:"id"`
+	ID         string                           `json:"id"`
 	Name       string                           `json:"name"`
+	CreatedAt  string                           `json:"created_at"`
+	Version    int                              `json:"version"`
 	Attributes map[string]*SubcategoryAttribute `json:"attributes"`
 }
 
 type SubcategoryAttribute struct {
-	Required    bool     `json:"required"`
-	Type        string   `json:"type"`
-	StringArray []string `json:"string_array,omitempty"`
+	Required    bool        `json:"required"`
+	Type        string      `json:"type"`
+	Reference   string      `json:"reference"`
+	IsMultiple  bool        `json:"is_multiple"`
+	StringArray []string    `json:"string_array"`
+	Validation  *Validation `json:"validation"`
+}
+
+type Validation struct {
+	Numeric *struct {
+		Rules []struct {
+			Type  string  `json:"type"`
+			Value float64 `json:"value"`
+		} `json:"rules"`
+	} `json:"numeric"`
+	Str *struct {
+		Rules []struct {
+			Type  string  `json:"type"`
+			Value float64 `json:"value"`
+		} `json:"rules"`
+	} `json:"str"`
+}
+
+type CategoryEdit struct {
+	ID            string         `json:"id"`
+	Name          string         `json:"name"`
+	Image         string         `json:"image"`
+	Subcategories []*Subcategory `json:"subcategories"`
+	Version       int            `json:"version"`
+	CreatedAt     time.Time      `json:"created_at"`
 }
 
 func InsertCategories(ctx context.Context, tx pgx.Tx) error {
@@ -52,15 +74,15 @@ func InsertCategories(ctx context.Context, tx pgx.Tx) error {
 	payload := make([][]any, 0, len(array))
 
 	for _, c := range array {
-		createdAt := time.Now().UTC()
 
 		subData, err := json.Marshal(c.Subcategories)
 		if err != nil {
 			return err
 		}
 
+		createdAt := time.Now().UTC()
 		edits := []*CategoryEdit{{
-			Id:            c.Id,
+			ID:            c.ID,
 			Name:          c.Name,
 			Version:       1,
 			Subcategories: c.Subcategories,
@@ -72,11 +94,11 @@ func InsertCategories(ctx context.Context, tx pgx.Tx) error {
 			return err
 		}
 
-		args := []any{c.Id, c.Name, subData, editsData, 1, createdAt}
+		args := []any{c.ID, c.Name, c.Image, subData, editsData, 1, createdAt}
 		payload = append(payload, args)
 	}
 
-	_, err = tx.CopyFrom(ctx, pgx.Identifier{"categories"}, []string{"id", "name", "subcategories", "edits", "version", "created_at"}, pgx.CopyFromRows(payload))
+	_, err = tx.CopyFrom(ctx, pgx.Identifier{"categories"}, []string{"id", "name", "image", "subcategories", "edits", "version", "created_at"}, pgx.CopyFromRows(payload))
 	if err != nil {
 		return err
 	}
